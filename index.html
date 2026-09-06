@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karoll39 — Tecnología, IA y más</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #080c14;
+      --surface:   #0f1623;
+      --border:    #1e2a3a;
+      --accent:    #00c8ff;
+      --accent2:   #7b5ea7;
+      --text:      #dde4ef;
+      --muted:     #5a6a82;
+      --font:      'Space Grotesk', system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 24px 56px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .06em;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      padding: 3px 10px;
+      margin-bottom: 28px;
+      opacity: .85;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--text);
+      max-width: 520px;
+      margin-bottom: 36px;
+    }
+
+    .links-hero {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-size: .9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+    .btn:hover { opacity: .8; }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #050810;
+    }
+    .btn-ghost {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: var(--surface);
+    }
+
+    /* DIVIDER */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* PROYECTOS */
+    .section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 52px 24px;
+    }
+
+    .section-label {
+      font-size: .78rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+      letter-spacing: .05em;
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 24px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      transition: border-color .2s;
+    }
+    .card:hover { border-color: var(--accent); }
+
+    .card-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .card-desc {
+      font-size: .88rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* INTERESES */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: .85rem;
+      font-weight: 300;
+      color: var(--text);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 28px 24px;
+      font-size: .82rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <span class="badge">Barcelona · España</span>
+    <h1>Hola, soy <span>Karoll39</span></h1>
+    <p>
+      Me apasiona la tecnología, la inteligencia artificial y crear cosas nuevas.
+      Aquí recojo mis proyectos, experimentos y todo lo que me genera curiosidad.
+    </p>
+    <div class="links-hero">
+      <a class="btn btn-primary" href="https://bandaanchatech.com" target="_blank">Mi web de tecnología</a>
+      <a class="btn btn-ghost" href="https://github.com/Karoll39" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <p class="section-label">Proyectos</p>
+    <div class="cards">
+
+      <a class="card" href="https://bandaanchatech.com" target="_blank">
+        <span class="card-icon">🖥️</span>
+        <div>
+          <div class="card-title">BandaAnchaTech</div>
+          <div class="card-desc">Portal de noticias sobre tecnología e inteligencia artificial. Reviews, novedades y todo lo que me parece interesante del sector.</div>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.youtube.com/@unpoquitodetodo" target="_blank">
+        <span class="card-icon">🎬</span>
+        <div>
+          <div class="card-title">Un poquito de todo</div>
+          <div class="card-desc">Canal de YouTube con vídeos de mis mascotas y experimentos con inteligencia artificial.</div>
+        </div>
+      </a>
+
+      <a class="card" href="#" target="_blank">
+        <span class="card-icon">🎵</span>
+        <div>
+          <div class="card-title">Dark Frequency</div>
+          <div class="card-desc">Proyecto musical donde creo temas de High-Tech Minimal con herramientas de inteligencia artificial.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section">
+    <p class="section-label">Intereses</p>
+    <div class="tags">
+      <span class="tag">Inteligencia Artificial</span>
+      <span class="tag">Tecnología</span>
+      <span class="tag">Música</span>
+      <span class="tag">Mascotas</span>
+      <span class="tag">Hardware</span>
+      <span class="tag">Privacidad digital</span>
+      <span class="tag">Farmacia</span>
+      <span class="tag">YouTube</span>
+    </div>
+  </div>
+
+  <hr>
+
+  <footer>
+    <span>Karoll39 · Barcelona</span>
+    <span>Hecho con curiosidad 🙂</span>
+  </footer>
+
+</body>
+</html>
